@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>星空体育 · 产品说明页</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #faf9f7;
+      color: #1e1e1e;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      line-height: 1.7;
+      padding: 2rem 1.25rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .page {
+      max-width: 700px;
+      width: 100%;
+    }
+
+    /* hero 区 */
+    .hero {
+      margin-top: 1.2rem;
+      margin-bottom: 2.8rem;
+    }
+
+    .hero h1 {
+      font-size: 2.6rem;
+      font-weight: 400;
+      letter-spacing: -0.015em;
+      line-height: 1.2;
+      color: #1a1a1a;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero .sub {
+      font-size: 1.05rem;
+      color: #555;
+      max-width: 580px;
+      border-left: 3px solid #d4d0c8;
+      padding-left: 1.2rem;
+      margin-top: 0.3rem;
+    }
+
+    /* 通用标题 */
+    h2 {
+      font-weight: 450;
+      font-size: 1.6rem;
+      letter-spacing: -0.01em;
+      margin: 2.6rem 0 0.8rem 0;
+      color: #1e1e1e;
+      border-bottom: 1px solid #e6e2dc;
+      padding-bottom: 0.3rem;
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 1.2rem;
+      margin: 1.8rem 0 0.5rem 0;
+      color: #2a2a2a;
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1rem;
+      color: #2c2c2c;
+    }
+
+    /* 亮点卡片 */
+    .highlights {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin: 1.6rem 0 1.8rem 0;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 1.4rem 1.6rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02), 0 6px 20px rgba(0, 0, 0, 0.02);
+      border: 1px solid #eeebe6;
+    }
+
+    .card .label {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #8a857e;
+      margin-bottom: 0.3rem;
+    }
+
+    .card .main {
+      font-size: 1.05rem;
+      font-weight: 400;
+      color: #1f1f1f;
+    }
+
+    .card .desc {
+      font-size: 0.95rem;
+      color: #4a4a4a;
+      margin-top: 0.4rem;
+    }
+
+    /* 场景块 */
+    .scene-box {
+      background: #f4f2ef;
+      border-radius: 20px;
+      padding: 1.6rem 1.8rem;
+      margin: 2rem 0;
+    }
+
+    .scene-box p {
+      margin-bottom: 0.9rem;
+    }
+
+    /* 提示 / 说明 */
+    .note {
+      font-size: 0.92rem;
+      padding: 1rem 1.4rem;
+      background: #ffffff;
+      border-left: 4px solid #cbc5bc;
+      border-radius: 0 12px 12px 0;
+      margin: 1.8rem 0 1rem 0;
+      color: #3b3b3b;
+    }
+
+    /* FAQ 摘要 */
+    .faq-item {
+      margin: 1rem 0 0.8rem 0;
+    }
+
+    .faq-q {
+      font-weight: 480;
+      margin-bottom: 0.15rem;
+      color: #1e1e1e;
+    }
+
+    .faq-a {
+      color: #4a4a4a;
+      padding-left: 0.5rem;
+      border-left: 2px solid #d6d0c8;
+      padding-left: 1rem;
+      font-size: 0.95rem;
+    }
+
+    /* 链接样式 */
+    a {
+      color: #1f2b3c;
+      text-decoration: none;
+      border-bottom: 1px solid #b0a89e;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    a:hover {
+      color: #000;
+      border-bottom-color: #1f2b3c;
+    }
+
+    /* 响应式 */
+    @media (max-width: 500px) {
+      body {
+        padding: 1.5rem 1rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.35rem;
+      }
+      .card {
+        padding: 1.1rem 1.2rem;
+      }
+      .scene-box {
+        padding: 1.2rem 1.2rem;
+      }
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e2ddd7;
+      margin: 2.2rem 0 1rem 0;
+    }
+
+    .footer-note {
+      font-size: 0.9rem;
+      color: #6f6a63;
+      margin: 2rem 0 0.5rem 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- hero -->
+  <div class="hero">
+    <h1>星空体育</h1>
+    <div class="sub">
+      产品说明 · 日常查询与对照
+    </div>
+  </div>
+
+  <!-- 摘要段落 -->
+  <p>
+    在信息汇集与筛选的过程中，往往需要一处稳定的参照。<a href="https://ssl-xingkong.com">星空体育</a> 提供了一种围绕赛事数据与基础资讯展开的查阅方式。它不强调即时刷新或密集推送，而是更接近一份可随时取用的索引——适合在需要核对、延伸阅读或简单回顾时打开。
+  </p>
+
+  <!-- 亮点卡片 -->
+  <h2>几个特点</h2>
+  <div class="highlights">
+    <div class="card">
+      <div class="label">结构</div>
+      <div class="main">条目化陈列</div>
+      <div class="desc">信息以清晰的分组和列表呈现，减少无关干扰，便于快速定位感兴趣的部分。</div>
+    </div>
+    <div class="card">
+      <div class="label">内容</div>
+      <div class="main">聚焦常见查询场景</div>
+      <div class="desc">覆盖日常可能会用到的队伍、赛事阶段与基础统计，不做过度延伸。</div>
+    </div>
+    <div class="card">
+      <div class="label">节奏</div>
+      <div class="main">平缓的浏览方式</div>
+      <div class="desc">页面布局留出足够间隙，适合不赶时间、希望边看边想的习惯。</div>
+    </div>
+  </div>
+
+  <!-- 使用建议 / 场景 -->
+  <h2>可以怎么用</h2>
+  <div class="scene-box">
+    <p><strong>对照查阅</strong><br>
+    当你手头有一份旧记录或别人提到的某个数据，不妨打开 <a href="https://ssl-xingkong.com">星空体育</a> 作一次对照。条目的排列方式让对比变得直接，不需要反复跳转。</p>
+    <p><strong>延伸浏览</strong><br>
+    从某一个条目出发，顺着关联内容向周边扩展。这种阅读方式接近翻看一本专题手册——没有强目标，但常能发现意料之外的细节。</p>
+    <p><strong>日常熟悉</strong><br>
+    即使没有特定查询需求，偶尔浏览也能逐渐建立起对整体信息框架的印象。对于希望保持基础了解的读者而言，这是一种低负担的日常动作。</p>
+  </div>
+
+  <!-- 提示 -->
+  <div class="note">
+    <strong>一点说明</strong>：本页面是对产品形态的概述，并非实时数据面板。实际内容以 <a href="https://ssl-xingkong.com">星空体育</a> 内展示为准，建议根据自身需要选择查看的模块。
+  </div>
+
+  <!-- FAQ 摘要 -->
+  <h2>常见问题摘要</h2>
+  <div class="faq-item">
+    <div class="faq-q">— 信息更新频率如何？</div>
+    <div class="faq-a">按常规周期维护，不追求秒级刷新。适合对时效要求不那么极端的查询场景。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">— 需要注册或登录吗？</div>
+    <div class="faq-a">无需注册即可浏览绝大多数内容。部分个性化功能可能涉及账号，但基础查阅完全开放。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">— 移动端体验怎么样？</div>
+    <div class="faq-a">页面针对窄屏做了适配，在手机浏览器上可以正常阅读和操作，没有横向滚动或元素重叠的问题。</div>
+  </div>
+
+  <hr>
+
+  <p style="font-size:0.92rem; color:#5b554e;">
+    如果你习惯在安静的环境里慢慢梳理信息，<a href="https://ssl-xingkong.com">星空体育</a> 或许能成为你书签栏里一个不起眼但常被点开的名字。
+  </p>
+
+  <div class="footer-note">
+    产品说明页 · 内容方向：日常查询与对照
+  </div>
+
+</div>
+</body>
+</html>
